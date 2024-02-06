@@ -1,7 +1,12 @@
 var customerName = 'bob';
 
+
 function upperCaseCustomerName() {
-    customerName = customerName.toUpperCase();
+  customerName = customerName.toUpperCase();
+}
+
+function lowerCaseName() {
+  customerName = customerName.toLowerCase();
 }
 
 function setBestCustomer() {
@@ -15,12 +20,8 @@ function overwriteBestCustomer() {
 // GLOBAL
 const leastFavoriteCustomer = 'someone';
 
-//Below Function does not work because the variable in the functions was determined perviously by const aka = Global
+// not working below
 function changeLeastFavoriteCustomer() {
   leastFavoriteCustomer = 'someone else';
 }
 
-upperCaseCustomerName();
-setBestCustomer();
-overwriteBestCustomer();
-changeLeastFavoriteCustomer();
